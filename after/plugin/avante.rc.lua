@@ -1,0 +1,35 @@
+--local status, avante = pcall(require, "avante")
+--if (not status) then
+--  -- print("avante not installed")
+--  return
+--end
+--require('avante_lib').load()
+--
+-- avante.setup({
+--   {
+--     provider = "openai", -- "claude" or "openai" or "azure"
+--     claude = {
+--       endpoint = "https://api.anthropic.com",
+--       model = "claude-3-5-sonnet-20240620",
+--       temperature = 0,
+--       max_tokens = 4096,
+--     },
+--     highlights = {
+--       diff = {
+--         current = "DiffText", -- need have background color
+--         incoming = "DiffAdd", -- need have background color
+--       },
+--     },
+--     mappings = {
+--       show_sidebar = "<leader>aa",
+--       diff = {
+--         ours = "co",
+--         theirs = "ct",
+--         none = "c0",
+--         both = "cb",
+--         next = "]x",
+--         prev = "[x",
+--       },
+--     },
+--   }
+-- })
