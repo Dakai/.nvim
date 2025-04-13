@@ -1,0 +1,25 @@
+-- local status, null_ls = pcall(require, "null-ls")
+--
+-- if not status then
+--   print("null-ls not installed")
+--   return
+-- end
+--
+-- null_ls.setup({
+--   sources = {
+--     -- null_ls.builtins.formatting.stylua,
+--     -- null_ls.builtins.completion.spell,
+--     null_ls.builtins.formatting.black,
+--     -- require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
+--   },
+--   on_attach = function(client, bufnr)
+--     if client.supports_method("textDocument/formatting") then
+--       vim.api.nvim_buf_create_autocmd(bufnr, "BufWritePre", {
+--         group = vim.api.nvim_create_augroup("FormatOnSave", { clear = true }),
+--         callback = function()
+--           vim.lsp.buf.format({ async = false })
+--         end,
+--       })
+--     end
+--   end,
+-- })
